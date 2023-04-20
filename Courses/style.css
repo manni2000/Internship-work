@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 7rem;
+    background-color: #f9f9f9;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 2;
+    margin: 0 15rem;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navbar a:hover {
+    color: orangered;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+}
+
+.auth {
+    display: flex;
+}
+
+.auth a {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(234, 136, 17);
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.home {
+    height: 800px;
+    background-image: url('./images/home1.avif');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home input[type="text"] {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.home button[type="submit"] {
+    padding: 0.5rem 3rem;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.suggested-keywords {
+    margin-top: 1rem;
+    margin-left: 17px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suggested-keywords a:hover {
+    color: orangered;
+}
+
+
+.suggested-keywords a {
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    color: #333;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.course {
+    padding: 2rem;
+}
+
+.course h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 500px;
+}
+
+.course-card img {
+    width: 100%;
+}
+
+.course-card-body {
+    padding: 1rem;
+}
+
+.course-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    margin-bottom: 1rem;
+}
+
+.categories {
+    padding: 2rem;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.categories img {
+    width: 300px;
+    height: 250px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-item {
+    justify-content: space-between;
+}
+
+
+.category-card img {
+    width: 100%;
+}
+
+.category-card-body {
+    padding: 1rem;
+}
+
+.category-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    margin-bottom: 1rem;
+}
+
+.about {
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.foot img {
+    width: 105rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        margin-left: 1rem;
+    }
+
+    css Copy code .auth a {
+        font-size: 0.8rem;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home input[type="text"] {
+        width: 70%;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
