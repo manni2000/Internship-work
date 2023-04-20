@@ -1,0 +1,334 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 6rem; 
+}
+
+nav {
+	margin-left: 30rem;
+}
+
+nav ul li {
+	margin: 0 2rem;
+}
+
+.nav-item {
+	font-size: 1.6rem;
+	font-weight: 500;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 0px;
+	margin: 0 5%;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.first div {
+	flex: 1 1 0px;
+}
+
+.first img {
+	width: 100% !important;
+}
+.first-arrows-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-arrows-wrapper ion-icon {
+	background-color: orangered;
+	color: white;
+	border-radius: 50%;
+	font-size: 4rem;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+
+.first-arrows-wrapper ion-icon:hover {
+background-color: red;
+}
+
+.first-content h2 {
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	color:rgb(100, 100, 100);
+}
+
+.first-content h1 {
+	word-wrap: break-word;
+}
+
+.logo img {
+	width: 200px;
+}
+
+hr {
+     width: 20%;
+	 margin-left: 0%;
+	 border-color: orangered;
+  }
+
+.button-wraper button {
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	padding: 1.5rem 2.5rem;
+	margin-right: 3rem;
+}
+
+.explore-button1 {
+  background-image: linear-gradient(to right, red , orangered);
+  color: #fff;
+  border: none;
+}
+
+.explore-button1:hover {
+	background-image: linear-gradient(to right, rgb(255, 132, 0) , orange);
+}
+
+.explore-button2{
+	color: black;
+	border-color: black;
+	
+  }
+  
+  .explore-button2:hover {
+	background-color: #acb6c0;
+  }
+
+h1{
+	font-size: 100px;
+	color: rgb(16, 16, 52);
+	font-family: Arial, Helvetica, sans-serif;
+	margin-block-end: 0;
+}
+
+h1 p {
+	margin-block-end: 0;
+}
+
+h1 hr {
+	margin: 1rem 0;
+}
+
+h2{
+	margin-top: auto;
+}
+p{
+	font-size: 100px;
+	color: orangered;
+	margin-top: auto;
+}
+
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px; 
+}
+
+nav ul li a:hover {
+	color:orangered;
+}
+
+.second{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5rem;
+}
+.second img {
+	width: 6000px;
+}
+
+.third{
+	display: flex;
+	align-items: center;
+	margin-left: 10%;
+	margin-top: 2rem;
+}
+
+.third div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0 10%;
+}
+
+.third h3{
+	font-size: 2rem;
+	font-weight: 200;
+	margin: 0;
+}
+
+.third button {
+	width: fit-content;
+	margin-top: 1rem;
+}
+
+.forth{
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	margin-right: 5rem;
+}
+
+.forth h4{
+	font-size: 4.5rem;
+	font-weight: 200;
+}
+
+.forth h5{
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.forth img{
+	width: 200rem;
+}
+
+
+.info{
+	background-image: linear-gradient(to right, red , orangered);
+    color: #fff;
+    border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	padding: 1.5rem 2.5rem;
+	margin-top: auto;
+}
+
+.info:hover{
+	background-image: linear-gradient(to right, rgb(255, 132, 0) , orange);
+}
+
+
+.check-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.check-icon ion-icon{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+    box-shadow: 0 0 1rem #aaa;
+	color: orangered;
+	font-size: 4rem;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+
+h7{
+	color: orangered;
+	font-size: 50px;
+}
+
+.Explore-more{
+	display: flex;
+	background-image: linear-gradient(to right, red , orangered);
+    color: #fff;
+    border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	padding: 1.5rem 2.5rem;
+	margin-top: auto;
+	margin-left: 20%;
+}
+
+.Explore-more:hover{
+	background-image: linear-gradient(to right, rgb(255, 132, 0) , orange);
+}
+
+.mentor{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    font-size: 2rem;	
+}
+
+#check-box {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.footer-content{
+	background-color: rgb(35, 35, 53);
+	color: white;
+	height: 500px;
+}
+
+.footer-item{
+	margin: 20px;
+	padding: 20px;
+	display: inline-block;
+}
+
+h8{
+	font-size: 40px;
+	text-align: center;
+}
+h9{
+	font-size: 40px;
+	font-weight: 100;
+	line-height: 200%;
+}
+h9:hover{
+	color: orange;
+}
+
+.social-media{
+	font-size: 40px;
+	color: rgb(243, 122, 78);
+}
+
+.footer-copy{
+   height: 60px;
+   font-size: 25px;
+   text-align: center;
+   background-color: orangered;
+   color: white;
+}
+
+.fifth img{
+	width: 126.5rem;
+}
+
+
