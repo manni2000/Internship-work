@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+
+    <!-- slider2 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link rel="stylesheet" href="slider2.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous" defer></script>
+    <script src="../JS/script.js" defer></script>
+    <script src="./course-master-script.js" defer></script>
+    <script src="../JS/navbar.js" defer></script>
+</head>
+
+<body>
+    <header style="padding-top:50px;">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow p-2" id="navbar">
+          <a class="navbar-brand" href="">
+            <img src="../images/brand.png" alt="baoiam logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Company
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./career/career.html">Career</a>
+                  <a class="dropdown-item" href="./Hire-From-Us/index.html">Hire from us</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" id="nav-courses-one">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Courses
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown-subcourses" data-toggle="dropdown" role="button">
+                        Regular Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-subcourses">
+                        <a class="dropdown-item">Graphic Designing</a>
+                        <a class="dropdown-item">Seo Marketing</a>
+                        <a class="dropdown-item">Digital Marketing Course</a>
+                        <a class="dropdown-item">Project Management</a>
+                        <a class="dropdown-item">Human Resources</a>
+                        <a class="dropdown-item">Corporate Law</a>
+                    </div>
+                  </a>
+                  <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
+                  <a class="dropdown-item" href="../ITIE-master/index.html">ITIE Courses</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown" id="nav-courses-two">
+                <a class="nav-link" href="#" role="button">Courses</a>
+                <ul class="nav-courses-list">
+                  <li>
+                    <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
+                    <ul class="sub-courses-list">
+                      <li><a>Content Writing</a></li>
+                      <li><a>Graphic Designing</a></li>
+                      <li><a>Seo Marketing</a></li>
+                      <li><a>Digital Marketing Course</a></li>
+                      <li><a>Project Management</a></li>
+                      <li><a>Human Resources</a></li>
+                      <li><a>Corporate Law</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../Entre-master/index.html">Enterpreneurship Courses <span class="bar"></span></a>
+                    <ul class="sub-courses-list"></ul>
+                  </li>
+                  <li >
+                    <a href="../ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
+                    <ul class="sub-courses-list"></ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./Blog-Section-main/main-blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Baoiam-refer-page-main/index.html">Refer & Earn</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" id="active" href="./contact-page/index.html">Contact Us</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="./Login/index.html"> <button class="btn-1">Login</button></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+    </header>
+
+    <section class="one">
+        <div class="info">
+            <button id="certified">Certified Online Training</button>
+            <h1>Web <span class="underline">Development</span> Course</h1>
+            <p>Learn Full Stack Web Development: HTML/CSS, MySQL, PHP, JavaScript, and React and build a website from
+                scratch!</p>
+            <p>Languages : <strong>Hindi, English</strong></p>
+            <button class="offer">1+1 Offer: Get Internship & Job Preparation training FREE on purchase of Web
+                Development training!</button>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div class="pic">
+            <img src="demo3.jpg">
+        </div>
+    </section>
+
+    <section class="two">
+        <h1>Course <span class="underline">Highlights</span></h1>
+        <div class="features">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <p class="heading">Learn Online</p>
+                        <p>At your own schedule</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-certificate"></i>
+                    <div>
+                        <p class="heading">Certificate Of Training</p>
+                        <p>From Internshala Trainings</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-group"></i>
+                    <div>
+                        <p class="heading">Beginner friendly</p>
+                        <p>No prior knowledge required</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p class="heading">Mobile friendly</p>
+                        <p>No laptop? No problem</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <div>
+                        <p class="heading">Projects</p>
+                        <p>For hands-on practice</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    <div>
+                        <p class="heading">8 weeks duration</p>
+                        <p>1 hr/day (flexible schedule)</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <div>
+                        <p class="heading">Placement assistance</p>
+                        <p>To build your career</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div>
+                        <p class="heading">Doubt clearing</p>
+                        <p>Through Q&A forum</p>
+                    </div>
+                </li>
+                <li id="last">
+                    <i class="fa-solid fa-business-time"></i>
+                    <div>
+                        <p class="heading">Downloadable content</p>
+                        <p>With lifetime access</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="three">
+        <h3 id="why-web-dev-heading-2"><span>Why <span class="underline">learn</span> web development?</span></h3>
+        <div class="why-web-dev-box">
+            <div class="why-web-dev">
+                <h3 id="why-web-dev-heading-1">Why <span class="underline">learn</span> web development?</h3>
+                <p class="heading">Build Awesome Websites</p>
+                <p>Mark Zuckerberg built Facebook. Sachin Bansal built Flipkart. What will you build?</p>
+                <p class="heading">Be in demand</p>
+                <p>With 1.7 billion websites on the internet, it is one of the hottest career options with an average
+                    fresher salary of 6 LPA for full stack developers according to Glassdoor.</p>
+                <p class="heading">Eat-Sleep-Code-Repeat</p>
+                <p>Be it rain or sunshine, coding is always on your mind.</p>
+            </div>
+            <div class="image">
+                <img src="demo1.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="five">
+        <h3 id="placement-info-heading-2"><span>What <span class="underline">placement assistance</span> will you receive?</span></h3>
+        <div class="placement-info">
+            <div class="why-web-dev">
+                <h3 id="placement-info-heading-1"><span>What <span class="underline">placement assistance</span> will you receive?</span></h3>
+                <p class="heading">Free Placement Prep Training</p>
+                <p>Learn how to build your resume, make great applications, and ace your interviews.</p>
+                <p class="heading">Curated internships & jobs</p>
+                <p>Get internships and fresher jobs as per your preference in your inbox.</p>
+                <p class="heading">Get highlighted on Internshala</p>
+                <p>Top performers will be highlighted in their internship & job applications on Internshala.</p>
+            </div>
+            <div class="image">
+                <img src="demo2.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="six">
+        <h1>How will your <span class="underline">training</span> work?</h1>
+        <div class="features">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <div>
+                        <p class="heading">Learn concepts</p>
+                        <p>Go through training videos to learn concepts</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-check-double"></i>
+                    <div>
+                        <p class="heading">1:1 doubt solving</p>
+                        <p>Get your doubts solved by experts through Q&A forum within 24 hours</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-brain"></i>
+                    <div>
+                        <p class="heading">Test yourself</p>
+                        <p>Test your knowledge through quizzes & module tests at regular intervals</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-pen"></i>
+                    <div>
+                        <p class="heading">Take final exam</p>
+                        <p>Complete your training by taking the final exam</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hands"></i>
+                    <div>
+                        <p class="heading">Hands-on practice</p>
+                        <p>Work on assignments and projects. Use our in-browser IDE for coding practice</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <p class="heading">Get certified</p>
+                        <p>Get certified in Web Development upon successful completion of training</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="seven">
+        <h1>Web Development Syllabus</h1>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Html
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        CSS
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        JavaScript
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nine">
+        <h1><span class="underline">Reviews</span> From Students</h1>
+        <h2>Average Rating : 4.5</h2>
+
+        <!-- Slider2 -->
+        <section class="slider2">
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://images.unsplash.com/photo-1569124589354-615739ae007b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae
+                                voluptate
+                                repellendus magni illo ea animi? </div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://images.unsplash.com/photo-1595868228899-abc8fabb3447?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae
+                                voluptate
+                                repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://images.unsplash.com/photo-1524638431109-93d95c968f03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae
+                                voluptate
+                                repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- FAQ -->
+    <div class="container-main faq">
+        <div class="ac-main">
+            <h1>Frequently Asked <span>Questions</span></h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Q1. I am not a student of BAOIAM. Can I still refer a friend?
+                    </div><!-- /.accordion-item-header -->
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Yes, If you are aware of BAOIAM and believe in what we are doing, then feel free to refer
+                            your friend.
+                        </div>
+                    </div><!-- /.accordion-item-body -->
+                </div><!-- /.accordion-item -->
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Q2. How can I track the status of my referrals?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            You will be informed by email once BAOIAM receives your referral details.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Q3. How will my friends be informed that I referred them?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Your friends will receive an email confirmation from BAOIAM informing them that they have
+                            been referred by
+                            you. They will be asked to confirm.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Q4. Will I get a referral reward if a friend/connection already exists in the BAOIAM database?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            No, there is no reward if your friend is connected with BAOIAM or its infromation exists in
+                            BAOIAM database
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Q5. Who all can I refer to?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Anyone who meets the eligibility criteria for our courses can be referred. They should be
+                            between 18 - 28
+                            years of age. They should know the basics of the English language, have a laptop, and a good
+                            internet
+                            connection.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="container subscribe" id="subscribe">
+        <div class="col-md-12 p-4 row">
+        <div class="col-md-7">
+            <h2 style="color: #fff;">Subscribe us for latest newsletter</h2>
+            <p>Expand your knowledge and skills by choosing the right mentor!</p>
+        </div>
+        <div class="col-md-5 pt-3">
+            <div class="form">
+            <input type="email" name="Email" placeholder="Enter Email" required>
+            <button type="Submit" class="btn-3">Subscribe</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="text-center text-white">
+        <div class="footer-container text-left text-md-start mt-4">
+        <div class="row mr-3">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Quick Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="index.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Home</a>
+            </p>
+            <p>
+                <a href="career/career.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Career</a>
+            </p>
+            <p>
+                <a href="Hire-From-Us/index.html" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>Hire
+                From Us</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.8rem;"><i class="fa-solid fa-angle-right mr-2"></i>BTH
+                - Talent Hunt Exam</a>
+            </p>
+            <p>
+                <a href="Baoiam-refer-page-main/index.html" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>Refer
+                and Earn</a>
+            </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Other Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="Blog-Section-main/main-blog.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Blog</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Events and Contest</a>
+            </p>
+            <p>
+                <a href="contact-page/index.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Contact Us</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Courses</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="Blog-Section-main/blogs/blog2.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Entrepreneurship</a>
+            </p>
+            <p>
+                <a href="Blog-Section-main/blogs/blog1.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Product Management</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>SAP
+                FICO</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3 contact-us" style="padding-left: 15px;">
+            <!-- Links -->
+            <h6 style="color: #fff">Contact Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p style="font-size: 0.8rem;"><i class="fas fa-home mr-1 p-2 rounded"></i> B Block Noida Sector 15 Uttar
+                Pradesh</p>
+            <p style="font-size: 0.9rem;"><i class="fas fa-envelope mr-1 p-2 rounded"></i> tutors@baoiam.com</p>
+            <p style="font-size: 0.9rem;"><i class="fas fa-phone mr-1 p-2 rounded"></i> +91-9992754599</p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100064896061625"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/beaoneinamillion/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/BAOIAM1"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd/mycompany/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="footer-end text-left p-2">
+        <div class="footer-end-container">
+            Copyright © 2023
+            <a class="text-white" href="https://mdbootstrap.com/">BAOIAM. </a>All Rights Reserved
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+<!-- faq -->
+<script>
+    var lastScrollTop = 0;
+    navbar = document.getElementById('navbar');
+    window.addEventListener("scroll", function () {
+        var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = '-100px';
+        } else {
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    })
+
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+
+
+            const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+                currentlyActiveAccordionItemHeader.classList.toggle("active");
+                currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+            }
+
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+
+        });
+    });
+</script>
+
+<!-- slider2 -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+<script type="text/javascript" src="slider2.js"></script>
+
+
+
+
+</html>
