@@ -1,2 +1,2 @@
 # StartUp-Work
-Worked as a role of Web developer Intern at Baoiam Innovations Pvt Ltd for 3 months.
+Worked as a role for Web developer Intern at Baoiam Innovations Pvt Ltd for 3 months.
